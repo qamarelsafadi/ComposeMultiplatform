@@ -27,6 +27,8 @@ kotlin {
             baseName = "common"
             isStatic = true
         }
+        extraSpecAttributes["resources"] = "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
+
     }
 
     sourceSets {
@@ -35,6 +37,10 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                api(compose.ui)
+                implementation("org.jetbrains.compose.components:components-resources:1.4.0-alpha01-dev942")
+                implementation("ca.gosyer:accompanist-pager:0.25.2")
+
             }
         }
         val commonTest by getting {
@@ -58,6 +64,8 @@ kotlin {
 android {
     namespace = "com.qamar.composemultiplatform"
     compileSdk = 33
+    sourceSets["main"].res.srcDirs("src/androidMain/res")
+    sourceSets["main"].resources.srcDir("src/commonMain/resources")
     defaultConfig {
         minSdk = 24
         targetSdk = 33
