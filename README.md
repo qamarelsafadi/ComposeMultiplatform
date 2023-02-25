@@ -9,7 +9,7 @@ Compose Multiplatform simplifies and accelerates UI and share it between Android
 https://user-images.githubusercontent.com/30949634/221372967-e14c1747-b7c9-48fe-9b49-cb3d88ad04e7.mp4
 
 ## Experimental targets
-iOS is experimental and under development. Use it at your own risk and that explains why you would have some laggy animation on it.
+iOS is experimental and under development. Use it at your own risk and that explains why you will have some laggy animation with it.
 
 
 <br/>
