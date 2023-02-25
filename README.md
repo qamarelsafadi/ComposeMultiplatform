@@ -231,9 +231,6 @@ Now open `iosApp.xcworkspace` inside xcode and run the app!
 
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
 
 Happy Kotlin 🚀!
 
