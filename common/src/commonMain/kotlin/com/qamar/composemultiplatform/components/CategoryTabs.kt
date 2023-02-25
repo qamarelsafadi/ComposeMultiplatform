@@ -22,7 +22,7 @@ import com.qamar.composemultiplatform.model.Plant
 @Composable
 internal fun CategoryTabs() {
     val pagerState = rememberPagerState()
-    val pages = Plant().getPlantList()
+    val pages = Plant.getPlantList()
     val indicator = @Composable { tabPositions: List<TabPosition> ->
         CustomIndicator(tabPositions, pagerState)
     }

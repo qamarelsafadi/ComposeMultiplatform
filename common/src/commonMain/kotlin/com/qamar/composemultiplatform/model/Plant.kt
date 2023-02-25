@@ -12,18 +12,21 @@ data class Plant(
     val image: String? = null
 ) {
 
-    fun getPlantList(): List<Plant> {
+    companion object{
+        fun getPlantList(): List<Plant> {
 
-        //"Bird of paradise", "Dracaena", "Palm", "Ficus", "Cedar", "Fiddle"
-        return listOf(
-            Plant("Bird of paradise", image = "plant1.png"),
-            Plant("Dracaena", image = "plant2.png"),
-            Plant("Palm", image = "plant3.png"),
-            Plant("Ficus", image = "plant1.png"),
-            Plant("Cedar", image = "plant2.png"),
-            Plant("Fiddle", image = "plant3.png"),
-        )
+            //"Bird of paradise", "Dracaena", "Palm", "Ficus", "Cedar", "Fiddle"
+            return listOf(
+                Plant("Bird of paradise", image = "plant1.png"),
+                Plant("Dracaena", image = "plant2.png"),
+                Plant("Palm", image = "plant3.png"),
+                Plant("Ficus", image = "plant1.png"),
+                Plant("Cedar", image = "plant2.png"),
+                Plant("Fiddle", image = "plant3.png"),
+            )
+        }
     }
+
 }
 
 data class Properties(
