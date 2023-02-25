@@ -182,7 +182,7 @@ Now go to `AndoroidApp` module to use the function we made in main.android class
 Next go to `IosApp`  module to use the function we made in main.ios class
 
 ```swift
-import common // this important to import don't forget it! 
+import shared // this important to import don't forget it! 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
