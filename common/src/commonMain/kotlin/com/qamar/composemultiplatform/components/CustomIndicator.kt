@@ -56,14 +56,13 @@ internal fun CustomIndicator(tabPositions: List<TabPosition>, pagerState: PagerS
 
     Box(
         Modifier
-            .offset(x = indicatorStart)
+//            .offset(x = indicatorStart)
             .wrapContentSize(align = Alignment.BottomStart)
-            .width(indicatorEnd - indicatorStart)
+//            .width(indicatorEnd - indicatorStart)
             .requiredHeight(30.dp)
             .padding(2.dp)
             .fillMaxSize()
-            .background(color = Black, RoundedCornerShape(50))
-            .zIndex(1f)
+//            .zIndex(1f)
 
     )
 }

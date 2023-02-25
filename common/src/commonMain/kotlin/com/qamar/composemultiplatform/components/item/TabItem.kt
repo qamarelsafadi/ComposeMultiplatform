@@ -27,7 +27,7 @@ internal fun TabItem(
     val scope = rememberCoroutineScope()
     val isSelected = pagerState.currentPage == index
     val color: Color by animateColorAsState(
-        if (isSelected) Color.White else Gray
+        if (isSelected) Color.Black else Gray
     )
     Tab(
         modifier = Modifier.zIndex(6f)
