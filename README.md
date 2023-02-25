@@ -216,8 +216,6 @@ now you can run your android normally, for `IOS` you need to run the following c
 
 Now open `iosApp.xcworkspace` inside xcode and run the app!
 
-Note: yo
-
 
 
 ## Resources 
