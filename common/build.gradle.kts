@@ -38,9 +38,7 @@ kotlin {
                 api(compose.foundation)
                 api(compose.material)
                 api(compose.ui)
-                implementation("org.jetbrains.compose.components:components-resources:1.4.0-alpha01-dev942")
-                implementation("ca.gosyer:accompanist-pager:0.25.2")
-
+                implementation("org.jetbrains.compose.components:components-resources:1.4.0")
             }
         }
         val commonTest by getting {
