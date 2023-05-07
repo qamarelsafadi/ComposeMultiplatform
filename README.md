@@ -4,9 +4,12 @@
 
 # Compose Multiplatform 
 
-Compose Multiplatform simplifies and accelerates UI and share it between Android, IOS, Desktop and Web.
+Compose 
 
-https://user-images.githubusercontent.com/30949634/221372967-e14c1747-b7c9-48fe-9b49-cb3d88ad04e7.mp4
+https://user-images.githubusercontent.com/30949634/236697673-dbf52629-9809-41a9-b9fd-8363ea527b99.mov
+
+Multiplatform simplifies and accelerates UI and share it between Android, IOS, Desktop and Web.
+
 
 ## Experimental targets
 iOS is experimental and under development. Use it at your own risk and that explains why you will have some laggy animation with it.
