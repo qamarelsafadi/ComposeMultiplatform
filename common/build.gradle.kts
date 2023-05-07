@@ -38,8 +38,8 @@ kotlin {
                 api(compose.foundation)
                 api(compose.material)
                 api(compose.ui)
-                implementation("org.jetbrains.compose.components:components-resources:1.4.0")
-            }
+                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+                implementation(compose.components.resources)            }
         }
         val commonTest by getting {
             dependencies {

@@ -52,12 +52,7 @@ internal fun App() {
         modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
         verticalArrangement = Arrangement.Center
     ) {
-        LocalImage(
-            imageResourceName = "plant1.png",
-            contentDescription = null,
-            modifier = Modifier.size(35.dp).clickable {
-            }
-        )
+
         Text(
             text = "Login",
             fontSize = 28.sp,

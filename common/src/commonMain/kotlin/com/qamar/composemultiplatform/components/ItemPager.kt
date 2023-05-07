@@ -1,11 +1,13 @@
 package com.qamar.composemultiplatform.components
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.PagerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -17,16 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.google.accompanist.pager.ExperimentalPagerApi
-import com.google.accompanist.pager.HorizontalPager
-import com.google.accompanist.pager.PagerState
 import com.qamar.composemultiplatform.components.plant.PlantImage
 import com.qamar.composemultiplatform.components.plant.PlantProperty
 import com.qamar.composemultiplatform.model.Plant
 
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
-@OptIn(ExperimentalPagerApi::class)
 internal fun ItemPager(
     pagerState: PagerState,
     pages: List<Plant>
@@ -45,7 +44,7 @@ internal fun ItemPager(
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White),
-        count = pages.size,
+        pageCount = pages.size,
         state = pagerState,
     ) { page ->
         Box(
@@ -61,7 +60,8 @@ internal fun ItemPager(
                     .align(Alignment.CenterStart)
             )
             PlantProperty(
-                currentItem, Modifier
+                currentItem,
+                Modifier
                     .padding(
                         end = 26.dp,
                         bottom = 50.dp

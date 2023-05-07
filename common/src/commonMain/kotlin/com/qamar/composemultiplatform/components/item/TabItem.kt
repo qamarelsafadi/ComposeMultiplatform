@@ -1,6 +1,8 @@
 package com.qamar.composemultiplatform.components.item
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.pager.PagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Tab
 import androidx.compose.material.Text
@@ -12,12 +14,10 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.Gray
 import androidx.compose.ui.zIndex
-import com.google.accompanist.pager.ExperimentalPagerApi
-import com.google.accompanist.pager.PagerState
 import com.qamar.composemultiplatform.model.Plant
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalPagerApi::class)
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 internal fun TabItem(
     pagerState: PagerState,
@@ -27,7 +27,7 @@ internal fun TabItem(
     val scope = rememberCoroutineScope()
     val isSelected = pagerState.currentPage == index
     val color: Color by animateColorAsState(
-        if (isSelected) Color.Black else Gray
+        if (isSelected) Color.White else Gray
     )
     Tab(
         modifier = Modifier.zIndex(6f)
@@ -40,7 +40,7 @@ internal fun TabItem(
         selected = isSelected,
         onClick = {
                 scope.launch {
-                    pagerState.animateScrollToPage(index,pagerState.currentPageOffset)
+                    pagerState.animateScrollToPage(index,pagerState.currentPageOffsetFraction)
                 }
         },
     )
