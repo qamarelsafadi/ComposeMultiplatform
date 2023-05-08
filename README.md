@@ -11,10 +11,6 @@ https://user-images.githubusercontent.com/30949634/236697673-dbf52629-9809-41a9-
 Multiplatform simplifies and accelerates UI and share it between Android, IOS, Desktop and Web.
 
 
-## Experimental targets
-iOS is experimental and under development. Use it at your own risk and that explains why you will have some laggy animation with it.
-
-
 <br/>
 
 # Repositroy 
@@ -35,6 +31,7 @@ Install
  
  <img width="995" alt="Screenshot 2023-02-25 at 6 58 46 PM" src=
 "https://user-images.githubusercontent.com/30949634/221369743-8512eb59-5c5e-4aee-8acb-575856b14ad0.png">
+<img width="1440" alt="Screenshot 2023-05-08 at 9 17 35 PM" src="https://user-images.githubusercontent.com/30949634/236900376-f1fc7f3b-8ed3-46f5-a30e-58c5f1ec28ba.png">
 
  ### Setup Compose for KMM 
  
@@ -54,11 +51,11 @@ in your `build.gradle.kts` add compose plugin
 ```kotlin
 plugins {
     //trick: for the same plugin versions in all sub-modules
-    id("com.android.application").version("8.0.0-alpha09").apply(false)
-    id("com.android.library").version("8.0.0-alpha09").apply(false)
-    kotlin("android").version("1.8.0").apply(false)
-    kotlin("multiplatform").version("1.8.0").apply(false)
-    id("org.jetbrains.compose").version("1.3.0") apply false // this one
+    //trick: for the same plugin versions in all sub-modules
+    id("com.android.application").version("8.0.0").apply(false)
+    id("com.android.library").version("8.0.0").apply(false)
+    kotlin("android").version("1.8.10").apply(false)
+    kotlin("multiplatform").version("1.8.10").apply(false)
 }
 
 ```
@@ -70,26 +67,28 @@ plugins {
     id("com.android.library")
     kotlin("native.cocoapods") // this 
     id("org.jetbrains.compose") // and this
-}}
+}
+}
 
 ```
 
 in your `kotlin` block add the following lines 
 ```kotlin
-ios()
-iosSimulatorArm64()
-
-cocoapods {
-    summary = "Some description for the Shared Module"
-    homepage = "Link to the Shared Module homepage"
-    version = "1.0"
-    ios.deploymentTarget = "16.1"
-    podfile = project.file("../iosApp/Podfile")
-    framework {
-        baseName = "shared"
-        isStatic = true
+  iosX64()
+  iosArm64()
+  iosSimulatorArm64()
+  cocoapods {
+        version = "1.0.0"
+        summary = "Some description for the Shared Module"
+        homepage = "Link to the Shared Module homepage"
+        ios.deploymentTarget = "14.1"
+        podfile = project.file("../iosApp/Podfile")
+        framework {
+            baseName = "shared"
+            isStatic = true
+        }
+        extraSpecAttributes["resources"] = "['src/commonMain/resources/**', 'src/iosMain/resources/**']" // this is for images 
     }
-}
 
 ```
 
@@ -114,24 +113,29 @@ In `sourceSets`
 ```kotlin
     sourceSets {
         val commonMain by getting {
-            dependencies {
-                api(compose.runtime)
-                api(compose.foundation)
-                api(compose.material)
+           dependencies {
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material)
+                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+                implementation(compose.components.resources)
             }
         }
-        val commonTest by getting {
+       val androidMain by getting {
             dependencies {
-                implementation(kotlin("test"))
+                api("androidx.activity:activity-compose:1.6.1")
+                api("androidx.appcompat:appcompat:1.6.1")
+                api("androidx.core:core-ktx:1.9.0")
             }
         }
-        val androidMain by getting
-        val androidUnitTest by getting
-        val iosMain by getting {
+        val iosX64Main by getting
+        val iosArm64Main by getting
+        val iosSimulatorArm64Main by getting
+        val iosMain by creating {
             dependsOn(commonMain)
-        }
-        val iosSimulatorArm64Main by getting {
-            dependsOn(iosMain)
+            iosX64Main.dependsOn(this)
+            iosArm64Main.dependsOn(this)
+            iosSimulatorArm64Main.dependsOn(this)
         }
     }
 ```
@@ -184,6 +188,7 @@ Now go to `AndoroidApp` module to use the function we made in main.android class
 
 Next go to `IosApp`  module to use the function we made in main.ios class
 
+
 ```swift
 import shared // this important to import don't forget it! 
 
@@ -233,7 +238,7 @@ now you can run your android normally, for `IOS` you need to run the following c
 
 ```
 
-Now open `iosApp.xcworkspace` inside xcode and run the app!
+Now open `iosApp.xcworkspace` inside xcode and run the app! or Run it inside Android Studio itself
 
 
 
@@ -241,10 +246,9 @@ Now open `iosApp.xcworkspace` inside xcode and run the app!
 
 [JetBrains Compose](https://github.com/JetBrains/compose-jb/tree/master/tutorials/Getting_Started)
 
-
-
 [Compose Mutliplatofrom Examples](https://github.com/JetBrains/compose-jb/tree/master/experimental/examples)
 
+[Compose Mutliplatofrom Template](https://github.com/JetBrains/compose-multiplatform-ios-android-template)
 
 
 
