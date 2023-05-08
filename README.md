@@ -4,9 +4,12 @@
 
 # Compose Multiplatform 
 
-Compose Multiplatform simplifies and accelerates UI and share it between Android, IOS, Desktop and Web.
+Compose 
 
-https://user-images.githubusercontent.com/30949634/221372967-e14c1747-b7c9-48fe-9b49-cb3d88ad04e7.mp4
+https://user-images.githubusercontent.com/30949634/236697673-dbf52629-9809-41a9-b9fd-8363ea527b99.mov
+
+Multiplatform simplifies and accelerates UI and share it between Android, IOS, Desktop and Web.
+
 
 ## Experimental targets
 iOS is experimental and under development. Use it at your own risk and that explains why you will have some laggy animation with it.
@@ -163,10 +166,10 @@ fun Application(){
 
 In your `IosMain` make `main.ios` class to use your App function 
 ```kotlin
-fun MainViewController(): UIViewController =
-    Application("Example Application") {
-        App()
-    }
+import androidx.compose.ui.window.ComposeUIViewController
+
+fun MainViewController() = ComposeUIViewController { App() }
+
 ```
 
 Now go to `AndoroidApp` module to use the function we made in main.android class
@@ -184,16 +187,32 @@ Next go to `IosApp`  module to use the function we made in main.ios class
 ```swift
 import shared // this important to import don't forget it! 
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+@main
+struct iOSApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+     }
+  }
+  
+ // inside your ContentView class  
+ 
+import SwiftUI
+import shared
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = Main_iosKt.MainViewController()
-        window?.rootViewController = mainViewController
-        window?.makeKeyAndVisible()
-        return true
+struct ComposeView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        Main_iosKt.MainViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
+struct ContentView: View {
+    var body: some View {
+        ComposeView()
+                .ignoresSafeArea(.keyboard) // Compose has own keyboard handler
     }
 }
 
