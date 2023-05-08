@@ -10,12 +10,8 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		71F4BF5F4694198F65F34F4C /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1316589EAC92257AA96817 /* Pods_iosApp.framework */; };
 		7D0E06802A081B3100B762EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E067F2A081B3100B762EA /* ContentView.swift */; };
-		7D0E068C2A08280400B762EA /* Plants1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06892A08280400B762EA /* Plants1.jpg */; };
-		7D0E068D2A08280400B762EA /* Plants2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E068A2A08280400B762EA /* Plants2.jpg */; };
-		7D0E068E2A08280400B762EA /* Plants3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E068B2A08280400B762EA /* Plants3.jpg */; };
-		7D80628D2A0923B900D9EB1C /* Plants.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80628C2A0923B900D9EB1C /* Plants.png */; };
+		7FAE86A0E9B0E863F5EBAB66 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF4867F0693D619484DC1F9 /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,17 +30,13 @@
 /* Begin PBXFileReference section */
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		21313204C5002CE86D683A68 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		6D1316589EAC92257AA96817 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF4867F0693D619484DC1F9 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1F78A7F2DDF9E703862C3B /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		7D0E067F2A081B3100B762EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7D0E06892A08280400B762EA /* Plants1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants1.jpg; path = ../../common/src/commonMain/resources/Plants1.jpg; sourceTree = "<group>"; };
-		7D0E068A2A08280400B762EA /* Plants2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants2.jpg; path = ../../common/src/commonMain/resources/Plants2.jpg; sourceTree = "<group>"; };
-		7D0E068B2A08280400B762EA /* Plants3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants3.jpg; path = ../../common/src/commonMain/resources/Plants3.jpg; sourceTree = "<group>"; };
-		7D80628C2A0923B900D9EB1C /* Plants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plants.png; sourceTree = "<group>"; };
-		930BBD09DF85D6DF0FBFEF89 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C2769754368C67975C78530E /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F4BF5F4694198F65F34F4C /* Pods_iosApp.framework in Frameworks */,
+				7FAE86A0E9B0E863F5EBAB66 /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +59,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6E2C4074EC19BAD631AAB689 /* Pods */ = {
+		1B621ECD65053DD2B00C7703 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				930BBD09DF85D6DF0FBFEF89 /* Pods-iosApp.debug.xcconfig */,
-				21313204C5002CE86D683A68 /* Pods-iosApp.release.xcconfig */,
+				2EF4867F0693D619484DC1F9 /* Pods_iosApp.framework */,
 			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2803E525B65FE340920D4168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2769754368C67975C78530E /* Pods-iosApp.debug.xcconfig */,
+				7C1F78A7F2DDF9E703862C3B /* Pods-iosApp.release.xcconfig */,
+			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,8 +82,8 @@
 			children = (
 				7555FF7D242A565900829871 /* iosApp */,
 				7555FF7C242A565900829871 /* Products */,
-				7555FFB0242A642200829871 /* Frameworks */,
-				6E2C4074EC19BAD631AAB689 /* Pods */,
+				2803E525B65FE340920D4168 /* Pods */,
+				1B621ECD65053DD2B00C7703 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +98,6 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				7D80628C2A0923B900D9EB1C /* Plants.png */,
-				7D0E06892A08280400B762EA /* Plants1.jpg */,
-				7D0E068A2A08280400B762EA /* Plants2.jpg */,
-				7D0E068B2A08280400B762EA /* Plants3.jpg */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
@@ -108,14 +105,6 @@
 				7D0E067F2A081B3100B762EA /* ContentView.swift */,
 			);
 			path = iosApp;
-			sourceTree = "<group>";
-		};
-		7555FFB0242A642200829871 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6D1316589EAC92257AA96817 /* Pods_iosApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +120,7 @@
 				7555FF78242A565900829871 /* Frameworks */,
 				7555FF79242A565900829871 /* Resources */,
 				7555FFB4242A642300829871 /* Embed Frameworks */,
+				4EE764338FEA86DBE186EA3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,10 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0E068C2A08280400B762EA /* Plants1.jpg in Resources */,
-				7D80628D2A0923B900D9EB1C /* Plants.png in Resources */,
-				7D0E068D2A08280400B762EA /* Plants2.jpg in Resources */,
-				7D0E068E2A08280400B762EA /* Plants3.jpg in Resources */,
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
 			);
@@ -191,6 +177,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4EE764338FEA86DBE186EA3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		64E2B65E40F1A5CB4B450804 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,7 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :common:embedAndSignAppleFrameworkForXcode\n";
+			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -363,7 +366,7 @@
 		};
 		7555FFA6242A565B00829871 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930BBD09DF85D6DF0FBFEF89 /* Pods-iosApp.debug.xcconfig */;
+			baseConfigurationReference = C2769754368C67975C78530E /* Pods-iosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +387,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
-					common,
+					shared,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qamar.composemultiplatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,7 +398,7 @@
 		};
 		7555FFA7242A565B00829871 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21313204C5002CE86D683A68 /* Pods-iosApp.release.xcconfig */;
+			baseConfigurationReference = 7C1F78A7F2DDF9E703862C3B /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -417,7 +420,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
-					common,
+					shared,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qamar.composemultiplatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";

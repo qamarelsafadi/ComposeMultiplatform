@@ -1,13 +1,6 @@
-//
-//  ContentView.swift
-//  iosApp
-//
-//  Created by Qamar Safadi on 07/05/2023.
-//  Copyright © 2023 orgName. All rights reserved.
-//
 
 import SwiftUI
-import common
+import shared
 
 struct ComposeView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
