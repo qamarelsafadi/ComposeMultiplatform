@@ -20,11 +20,9 @@ internal fun PlantImage(currentItem: Plant, modifier: Modifier) {
         animationSpec = tween(700)
     ) {
         Image(
-            painterResource(it.image!!) ,
+            painterResource("Plants.png") ,
               contentDescription = "",
             Modifier.size(500.dp)
-
-
 
         )
     }

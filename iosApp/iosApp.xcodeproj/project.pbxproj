@@ -11,16 +11,11 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		71F4BF5F4694198F65F34F4C /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1316589EAC92257AA96817 /* Pods_iosApp.framework */; };
-		7D0E067C2A081A8300B762EA /* plant2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06792A081A8300B762EA /* plant2.png */; };
-		7D0E067D2A081A8300B762EA /* plant3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E067A2A081A8300B762EA /* plant3.png */; };
-		7D0E067E2A081A8300B762EA /* plant1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E067B2A081A8300B762EA /* plant1.png */; };
 		7D0E06802A081B3100B762EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E067F2A081B3100B762EA /* ContentView.swift */; };
-		7D0E06822A08252000B762EA /* compose-multiplatform.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06812A08252000B762EA /* compose-multiplatform.xml */; };
-		7D0E06842A08258D00B762EA /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06832A08258D00B762EA /* image.jpeg */; };
-		7D0E06882A08266B00B762EA /* imag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06872A08266B00B762EA /* imag.png */; };
 		7D0E068C2A08280400B762EA /* Plants1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E06892A08280400B762EA /* Plants1.jpg */; };
 		7D0E068D2A08280400B762EA /* Plants2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E068A2A08280400B762EA /* Plants2.jpg */; };
 		7D0E068E2A08280400B762EA /* Plants3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E068B2A08280400B762EA /* Plants3.jpg */; };
+		7D80628D2A0923B900D9EB1C /* Plants.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D80628C2A0923B900D9EB1C /* Plants.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,16 +39,11 @@
 		6D1316589EAC92257AA96817 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D0E06792A081A8300B762EA /* plant2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant2.png; path = ../../common/src/commonMain/resources/plant2.png; sourceTree = "<group>"; };
-		7D0E067A2A081A8300B762EA /* plant3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant3.png; path = ../../common/src/commonMain/resources/plant3.png; sourceTree = "<group>"; };
-		7D0E067B2A081A8300B762EA /* plant1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant1.png; path = ../../common/src/commonMain/resources/plant1.png; sourceTree = "<group>"; };
 		7D0E067F2A081B3100B762EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7D0E06812A08252000B762EA /* compose-multiplatform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "compose-multiplatform.xml"; path = "../../common/src/commonMain/resources/compose-multiplatform.xml"; sourceTree = "<group>"; };
-		7D0E06832A08258D00B762EA /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
-		7D0E06872A08266B00B762EA /* imag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imag.png; path = ../../common/src/commonMain/resources/imag.png; sourceTree = "<group>"; };
 		7D0E06892A08280400B762EA /* Plants1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants1.jpg; path = ../../common/src/commonMain/resources/Plants1.jpg; sourceTree = "<group>"; };
 		7D0E068A2A08280400B762EA /* Plants2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants2.jpg; path = ../../common/src/commonMain/resources/Plants2.jpg; sourceTree = "<group>"; };
 		7D0E068B2A08280400B762EA /* Plants3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plants3.jpg; path = ../../common/src/commonMain/resources/Plants3.jpg; sourceTree = "<group>"; };
+		7D80628C2A0923B900D9EB1C /* Plants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plants.png; sourceTree = "<group>"; };
 		930BBD09DF85D6DF0FBFEF89 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,15 +97,10 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D80628C2A0923B900D9EB1C /* Plants.png */,
 				7D0E06892A08280400B762EA /* Plants1.jpg */,
 				7D0E068A2A08280400B762EA /* Plants2.jpg */,
 				7D0E068B2A08280400B762EA /* Plants3.jpg */,
-				7D0E06872A08266B00B762EA /* imag.png */,
-				7D0E06832A08258D00B762EA /* image.jpeg */,
-				7D0E06812A08252000B762EA /* compose-multiplatform.xml */,
-				7D0E067B2A081A8300B762EA /* plant1.png */,
-				7D0E06792A081A8300B762EA /* plant2.png */,
-				7D0E067A2A081A8300B762EA /* plant3.png */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
@@ -194,17 +179,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0E067C2A081A8300B762EA /* plant2.png in Resources */,
 				7D0E068C2A08280400B762EA /* Plants1.jpg in Resources */,
+				7D80628D2A0923B900D9EB1C /* Plants.png in Resources */,
 				7D0E068D2A08280400B762EA /* Plants2.jpg in Resources */,
 				7D0E068E2A08280400B762EA /* Plants3.jpg in Resources */,
-				7D0E06882A08266B00B762EA /* imag.png in Resources */,
-				7D0E067E2A081A8300B762EA /* plant1.png in Resources */,
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
-				7D0E06842A08258D00B762EA /* image.jpeg in Resources */,
-				7D0E06822A08252000B762EA /* compose-multiplatform.xml in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
-				7D0E067D2A081A8300B762EA /* plant3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
