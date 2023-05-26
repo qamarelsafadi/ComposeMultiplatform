@@ -45,8 +45,29 @@ pluginManagement {
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") // this one
     }
+     plugins {
+        val kotlinVersion = extra["kotlin.version"] as String
+        val agpVersion = extra["agp.version"] as String
+        val composeVersion = extra["compose.version"] as String
+
+        kotlin("jvm").version(kotlinVersion)
+        kotlin("multiplatform").version(kotlinVersion)
+        kotlin("android").version(kotlinVersion)
+
+        id("com.android.application").version(agpVersion)
+        id("com.android.library").version(agpVersion)
+        id("org.jetbrains.compose").version(composeVersion)
+    }
 }
 ```
+in your `gradle.properteis` add compose plugin
+```kotlin
+#Versions
+kotlin.version=1.8.20
+agp.version=7.4.2
+compose.version=1.4.0
+```
+
 in your `build.gradle.kts` add compose plugin
 ```kotlin
 plugins {
@@ -58,6 +79,8 @@ plugins {
     kotlin("multiplatform").version("1.8.10").apply(false)
 }
 
+
+
 ```
 
 now inside `shared module` `build.gradle.kts` add these two plugins 
@@ -67,7 +90,6 @@ plugins {
     id("com.android.library")
     kotlin("native.cocoapods") // this 
     id("org.jetbrains.compose") // and this
-}
 }
 
 ```
@@ -89,7 +111,13 @@ in your `kotlin` block add the following lines
         }
         extraSpecAttributes["resources"] = "['src/commonMain/resources/**', 'src/iosMain/resources/**']" // this is for images 
     }
-
+    
+    // in android block add these lines to support common resources
+    
+    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+    sourceSets["main"].res.srcDirs("src/androidMain/res")
+    sourceSets["main"].resources.srcDirs("src/commonMain/resources")
+    
 ```
 
 now BEFORE you sync you need to make sure about the following: 
