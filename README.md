@@ -45,27 +45,16 @@ pluginManagement {
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") // this one
     }
-     plugins {
-        val kotlinVersion = extra["kotlin.version"] as String
-        val agpVersion = extra["agp.version"] as String
-        val composeVersion = extra["compose.version"] as String
-
-        kotlin("jvm").version(kotlinVersion)
-        kotlin("multiplatform").version(kotlinVersion)
-        kotlin("android").version(kotlinVersion)
-
-        id("com.android.application").version(agpVersion)
-        id("com.android.library").version(agpVersion)
-        id("org.jetbrains.compose").version(composeVersion)
+    
+    plugins {
+        kotlin("jvm").version("1.8.20")
+        kotlin("multiplatform").version("1.8.20")
+        kotlin("android").version("1.8.20")
+        id("com.android.application").version("7.4.2")
+        id("com.android.library").version("7.4.2")
+        id("org.jetbrains.compose").version("1.4.0")
     }
 }
-```
-in your `gradle.properteis` add compose plugin
-```kotlin
-#Versions
-kotlin.version=1.8.20
-agp.version=7.4.2
-compose.version=1.4.0
 ```
 
 in your `build.gradle.kts` add compose plugin
