@@ -46,13 +46,13 @@ pluginManagement {
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev") // this one
     }
     
-    plugins {
-        kotlin("jvm").version("1.8.20")
-        kotlin("multiplatform").version("1.8.20")
-        kotlin("android").version("1.8.20")
+   plugins {
+        kotlin("jvm").version("1.8.21")
+        kotlin("multiplatform").version("1.8.21")
+        kotlin("android").version("1.8.21")
         id("com.android.application").version("7.4.2")
         id("com.android.library").version("7.4.2")
-        id("org.jetbrains.compose").version("1.4.0")
+        id("org.jetbrains.compose").version("1.4.3")
     }
 }
 ```
@@ -61,11 +61,10 @@ in your `build.gradle.kts` add compose plugin
 ```kotlin
 plugins {
     //trick: for the same plugin versions in all sub-modules
-    //trick: for the same plugin versions in all sub-modules
-    id("com.android.application").version("8.0.0").apply(false)
-    id("com.android.library").version("8.0.0").apply(false)
-    kotlin("android").version("1.8.10").apply(false)
-    kotlin("multiplatform").version("1.8.10").apply(false)
+    id("com.android.application").version("8.2.0-alpha06").apply(false)
+    id("com.android.library").version("8.2.0-alpha06").apply(false)
+    kotlin("android").version("1.8.21").apply(false)
+    kotlin("multiplatform").version("1.8.21").apply(false)
 }
 
 
@@ -148,7 +147,7 @@ In `sourceSets`
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
-        val iosMain by creating {
+        val iosMain by getting {
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
